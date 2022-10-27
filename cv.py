@@ -143,7 +143,7 @@ Support Worker: Part-time(Night Shifts)
 
 
         with tab3:
-            pas = Image.open('pass3.png')
+            pas = Image.open('p2.png')
             st.image(pas,width= 250,caption = 'Profile Picture')
             # logo = Image.open('mo1.jpg')
             # st.image(logo,width= 250,caption = 'My Daughter')
