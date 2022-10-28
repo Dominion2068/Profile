@@ -1,9 +1,19 @@
 import streamlit as st
 from PIL import Image
-# from streamlit_player import st_player
+import requests
+from streamlit_lottie import st_lottie
 
-# icon = Image.open('pro1.png')
+
 st.set_page_config(layout = 'wide', page_title="My Profile",page_icon='pro1.png')
+
+def load_lottieurl(url: str):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
+
+lottie_shops = load_lottieurl('https://assets10.lottiefiles.com/packages/lf20_lyp6fz8l.json')
+st_lottie(lottie_shops, height=200)
 
 col1, col2, col3, = st.columns([0.5, 1, 0.05])
 col2.header('Akinsida Anthony Stephen')
@@ -154,7 +164,7 @@ Support Worker: Part-time(Night Shifts)
             logo = Image.open('mo2.jpg')
             st.image(logo,width= 250,caption = 'My daughter')
 
-            st.write('''Dont blame me if i troll Tottenham fans about their empty trophy cabinet, I
+            st.write('''Dont blame me if I troll Tottenham fans about their empty trophy cabinet, I
             get trolled by Manchester United and Liverpool fans too. Annoyingly, Chelsea fans troll
             me about my lack of trophies in Europe. I am always very happy to get one over Tottenham because
             they are my next-door neigbours.''')

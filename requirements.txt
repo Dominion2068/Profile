@@ -1,5 +1,6 @@
 Pillow==9.0.0
 streamlit==1.13.0
-streamlit_player==0.1.5
+streamlit-lottie==0.0.3
+requests==2.26.0
 toml==0.10.2
 click==8
