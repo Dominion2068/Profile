@@ -17,7 +17,7 @@ st_lottie(lottie_shops, height=200)
 
 col1, col2, col3, = st.columns([0.5, 1, 0.05])
 col2.header('Akinsida Anthony Stephen')
-col2.write('---')
+st.write('---')
 # col2.header('Akinsida Anthony Stephen')
 
 col1, col2 = st.columns(2)
@@ -72,7 +72,7 @@ with col2:
             st.caption('Bachelor of Arts Degree in Philosophy')
         
         with tab1:
-            struc = st.radio(label = 'Select a Topic', options = ['Data/Research Analyst Related Jobs',
+            struc = st.radio(label = 'Select to Consider an Experience', options = ['Data/Research Analyst Related Jobs',
                                                             'Teaching and Mentorship',
                                                             "Support Worker's Role",
                                                             ])
@@ -154,7 +154,7 @@ Support Worker: Part-time(Night Shifts)
 
         with tab3:
             pas = Image.open('p2.png')
-            st.image(pas,width= 250,caption = 'Profile Picture')
+            st.image(pas,width= 250,caption = '')
             # logo = Image.open('mo1.jpg')
             # st.image(logo,width= 250,caption = 'My Daughter')
             st.write('''My personal lifestyle revolves around: My Family, My Students, My Laptops and 
