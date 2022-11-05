@@ -77,6 +77,7 @@ with col2:
                                                             "Support Worker's Role",
                                                             ])
             st.write('---')
+            
             if struc == 'Data/Research Analyst Related Jobs':
                 st.write('''  
 March 2018 - Current  
@@ -153,7 +154,7 @@ Support Worker: Part-time(Night Shifts)
 
 
         with tab3:
-            pas = Image.open('p2.png')
+            pas = Image.open('pass1.png')
             st.image(pas,width= 250,caption = '')
             # logo = Image.open('mo1.jpg')
             # st.image(logo,width= 250,caption = 'My Daughter')
@@ -171,5 +172,11 @@ Support Worker: Part-time(Night Shifts)
             # st_player('https://www.youtube.com/watch?v=l3z_gICq-CQ',height=290)
 
             st.video('https://www.youtube.com/watch?v=l3z_gICq-CQ', 'rb')
+            st.write('''Arsenal Women also did same against Tottenham Woman in the North London Derby that 
+            created a record for the most attended FA Women's Super League football game with 47,367 spectators
+            at the Emirate Stadium on the 24th of September 2022.''')
+            if st.button('Watch Highlight Here'):
+                st.video('https://www.youtube.com/watch?v=o1y1fAeHgM8')
+                st.button('Close')
             
             
